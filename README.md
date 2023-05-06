@@ -1,5 +1,7 @@
 # create2crunch
 
+* Attention: Have a potential bug on Windows (can not lock and unlock file), pls comment 2 lines of code line 783 and 789 in src/lib.rs before building
+
 > A Rust program for finding salts that create gas-efficient Ethereum addresses via CREATE2.
 
 Provide three arguments: a factory address (or contract that will call CREATE2), a caller address (for factory addresses that require it as a protection against frontrunning), and the keccak-256 hash of the initialization code of the contract that the factory will deploy. (The example below references [`Create2Factory` on Ropsten](https://ropsten.etherscan.io/address/0xa779284f095ef2eBb8ee26cd8384e49C57b26996).)
